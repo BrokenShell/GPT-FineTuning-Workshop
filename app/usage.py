@@ -12,7 +12,7 @@ completion, *_ = openai.ChatCompletion.create(
     model="...",
     messages=[
         {"role": "system", "content": system_prompt},
-        {"role": "user", "content": user_prompt}
+        {"role": "user", "content": user_prompt},
     ]
 ).choices
 print(completion.message.content)
